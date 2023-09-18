@@ -30,6 +30,7 @@ dependencies {
     testImplementation 'mysql:mysql-connector-java:8.0.18'
     testImplementation 'org.postgresql:postgresql:42.2.27'
     testImplementation 'com.google.code.gson:gson:2.8.9'
+    testImplementation 'commons-dbutils:commons-dbutils:1.7'
 }
 
 test {
