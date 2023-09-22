@@ -8,29 +8,29 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class SQLHelper {
-    private static final String url = System.getProperty("datasource.url");
-    private static final String user = System.getProperty("datasource.username");
-    private static final String pass = System.getProperty("datasource.password");
+    private static final String url = System.getProperty("db.url");
+    private static final String user = System.getProperty("db.user");
+    private static final String pass = System.getProperty("db.password");
     private static QueryRunner runner = new QueryRunner();
 
     private SQLHelper() {}
 
     @SneakyThrows
     private static Connection getConnection() {
-        return DriverManager.getConnection("url", "user", "pass");
+        return DriverManager.getConnection(url, user, pass);
     }
 
     @SneakyThrows
-    private static String getCardPayment() {
+    public static String getCardPayment() {
         var connection = getConnection();
-        var codeSQL = "SELECT code FROM payment_entity ORDER BY created DESC LIMIT 1;";
+        var codeSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1;";
         return runner.query(connection, codeSQL, new ScalarHandler<>());
     }
 
     @SneakyThrows
-    private static String getCreditPayment() {
+    public static String getCreditPayment() {
         var connection = getConnection();
-        var codeSQL = "SELECT code FROM credit_request_entity ORDER BY created DESC LIMIT 1;";
+        var codeSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1;";
         return runner.query(connection, codeSQL, new ScalarHandler<>());
     }
 

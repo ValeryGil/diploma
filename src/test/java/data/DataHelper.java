@@ -11,7 +11,7 @@ public class DataHelper {
     private DataHelper() {}
 
     @Value
-    public static class CardInfo{
+    public static class CardInfo {
         public String cardNumber;
         public String cardStatus;
     }
