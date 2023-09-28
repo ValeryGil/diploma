@@ -2,7 +2,9 @@
 ## Веб-приложение "Путешествие дня".
 
 ## Документы.
-[План автоматизации] (https://github.com/ValeryGil/diploma/blob/main/documents/Plan.md)
+  - [План автоматизации](https://github.com/ValeryGil/diploma/blob/main/documents/Plan.md)  
+  - [Отчет по результатам автоматизированного тестирования](https://github.com/ValeryGil/diploma/blob/main/documents/Report.md)  
+  - [Отчет по автоматизации](https://github.com/ValeryGil/diploma/blob/main/documents/Summary.md)
 
 ## Описание приложения.
 Веб-приложение представляет собой сервис по покупке тура, который можно оплатить двумя способами:
