@@ -2,6 +2,7 @@
 ## Веб-приложение "Путешествие дня".
 
 ## Документы.
+  - [Задание на дипломные проект](https://github.com/ValeryGil/diploma/blob/main/documents/Task.md).
   - [План автоматизации](https://github.com/ValeryGil/diploma/blob/main/documents/Plan.md)  
   - [Отчет по результатам автоматизированного тестирования](https://github.com/ValeryGil/diploma/blob/main/documents/Report.md)  
   - [Отчет по автоматизации](https://github.com/ValeryGil/diploma/blob/main/documents/Summary.md)
